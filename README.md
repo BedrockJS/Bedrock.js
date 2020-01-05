@@ -14,7 +14,7 @@ If you'd like to compare Node.js to Java, take a look at [this article](https://
 Another major perk to using Node.js is the ability to create [Node Addons](https://nodejs.org/api/addons.html). These will allow us to write certain parts of the software (such as the RakNet implementation) in C++, which is obviously a far more performant language.
 
 ## Credits
-**Original Repo:** [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js)
+➡ **Original Repo:** [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js) <br />
 Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
 
 -   NukkitX ([NukkitX/Network](https://github.com/NukkitX/Network), [NukkitX/Nukkit](https://github.com/NukkitX/Nukkit))
