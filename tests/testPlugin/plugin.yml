@@ -1,0 +1,6 @@
+name: Plugin Name
+main: MyPlugin
+authors: John
+version: 1.0.0
+private: no
+api: [ 1.0.0 ]

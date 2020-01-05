@@ -1,0 +1,34 @@
+{
+  "name": "bedrockjs",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "node ./node_modules/ts-node/dist/bin.js -r tsconfig-paths/register app.ts",
+    "start:mon": "node ./node_modules/nodemon/bin/nodemon.js --watch 'src/**/*.ts' --exec node ./node_modules/ts-node/dist/bin.js -r tsconfig-paths/register app.ts",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
+    "tslint": "tslint --project tsconfig.json"
+  },
+  "dependencies": {
+    "@types/uuid": "^3.4.5",
+    "@types/yamljs": "^0.2.30",
+    "bytebuffer": "^5.0.1",
+    "chalk": "^2.4.2",
+    "math3d": "^0.2.2",
+    "tslint": "^5.12.1",
+    "uint64be": "^2.0.2",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/math3d": "^0.2.3",
+    "@types/node": "^10.17.13",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.7.0",
+    "tsconfig-paths-jest": "^0.0.1",
+    "typescript": "^3.2.2"
+  }
+}
