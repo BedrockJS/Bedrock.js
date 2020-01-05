@@ -1,9 +1,10 @@
 # Bedrock.js 
-(aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript
+(aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript <br />
+**Important Note:** This repository is a managed clone from [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js), we do not take credit for any of the original works from the original repository. All credit for the original works go to their rightful owners.
 
 ## Credits
 Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
--   ➡ Archived Original Repo ([https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js))
+-   Archived Original Repo ([https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js))
 -   NukkitX ([NukkitX/Network](https://github.com/NukkitX/Network), [NukkitX/Nukkit](https://github.com/NukkitX/Nukkit))
 -   PocketNode ([PocketNode/RakNet](https://github.com/PocketNode/RakNet), [PocketNode/PocketNode](https://github.com/PocketNode/PocketNode))
 -   GoMint ([GoMint/jRakNet](https://github.com/GoMint/jRakNet), [GoMint/GoMint](https://github.com/GoMint/GoMint))
@@ -11,7 +12,7 @@ Without the following repositories as a constant reference, this project would n
 -   falkirks ([falkirks/DirtServer](https://github.com/falkirks/DirtServer))
 
 ## Links
--   [Discord](https://discord.gg/uDhn7zM)
+-   [Discord](https://discord.gg/Ex6vKkJ)
 
 ## _"But JavaScript is so slow"_
 
