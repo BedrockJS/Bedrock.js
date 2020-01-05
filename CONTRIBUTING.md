@@ -9,7 +9,7 @@ The follow steps should be followed (in order) when creating a pull request:
 3. Open the project (`cd Bedrock.js`) and install dependencies (`yarn` or `npm i`, see below)
 4. Make the neccessary changes to the codebase
 5. `commit` and `push` your changes to your repo (again, ignore if you're making changes on GitHub)
-6. Create a pull request from your repo into the [official Bedrock.js repo](https://github.com/BradW/Bedrock.js)
+6. Create a pull request from your repo into the [Bedrock.js repo](https://github.com/BedrockJS/Bedrock.js)
 
 After following these steps correctly, your pull request will be reviewed and, if all goes according to plan, merged into `master`.
 

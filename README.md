@@ -1,5 +1,17 @@
-# Bedrock.js [![Build Status](https://travis-ci.com/BradW/Bedrock.js.svg?branch=master)](https://travis-ci.com/BradW/Bedrock.js) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/98445d9e441e45d983aaea24e0790b8c)](https://app.codacy.com/app/HypertextPP/Bedrock.js?utm_source=github.com&utm_medium=referral&utm_content=BradW/Bedrock.js&utm_campaign=Badge_Grade_Dashboard)
+# Bedrock.js 
 (aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript
+
+## Credits
+Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
+-   ➡ Archived Original Repo ([https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js))
+-   NukkitX ([NukkitX/Network](https://github.com/NukkitX/Network), [NukkitX/Nukkit](https://github.com/NukkitX/Nukkit))
+-   PocketNode ([PocketNode/RakNet](https://github.com/PocketNode/RakNet), [PocketNode/PocketNode](https://github.com/PocketNode/PocketNode))
+-   GoMint ([GoMint/jRakNet](https://github.com/GoMint/jRakNet), [GoMint/GoMint](https://github.com/GoMint/GoMint))
+-   PMMP ([pmmp/RakLib](https://github.com/pmmp/RakLib), [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP))
+-   falkirks ([falkirks/DirtServer](https://github.com/falkirks/DirtServer))
+
+## Links
+-   [Discord](https://discord.gg/uDhn7zM)
 
 ## _"But JavaScript is so slow"_
 
@@ -13,15 +25,3 @@ If you'd like to compare Node.js to Java, take a look at [this article](https://
 
 Another major perk to using Node.js is the ability to create [Node Addons](https://nodejs.org/api/addons.html). These will allow us to write certain parts of the software (such as the RakNet implementation) in C++, which is obviously a far more performant language.
 
-## Credits
-➡ **Original Repo:** [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js) <br />
-Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
-
--   NukkitX ([NukkitX/Network](https://github.com/NukkitX/Network), [NukkitX/Nukkit](https://github.com/NukkitX/Nukkit))
--   PocketNode ([PocketNode/RakNet](https://github.com/PocketNode/RakNet), [PocketNode/PocketNode](https://github.com/PocketNode/PocketNode))
--   GoMint ([GoMint/jRakNet](https://github.com/GoMint/jRakNet), [GoMint/GoMint](https://github.com/GoMint/GoMint))
--   PMMP ([pmmp/RakLib](https://github.com/pmmp/RakLib), [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP))
--   falkirks ([falkirks/DirtServer](https://github.com/falkirks/DirtServer))
-
-## Links
--   [Discord](https://discord.gg/uDhn7zM)
