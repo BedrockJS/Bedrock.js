@@ -22,7 +22,6 @@ export default class PluginManager {
 
     /**
      * enablePlugin
-     * Currently Server is passed in through onEnable, change and implement interfaces.
      */
 
     public enablePlugin(pl: Plugin) {
