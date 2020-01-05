@@ -1,5 +1,5 @@
 # Bedrock.js 
-(aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript <br />
+(aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript <br /><br />
 **Important Note:** This repository is a managed clone from [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js), we do not take credit for any of the original works from the original repository. All credit for the original works go to their rightful owners.
 
 ## Credits
