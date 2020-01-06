@@ -334,7 +334,6 @@ export default class Client {
 
     private handleGamePacket(packet: GamePacketWrapper) {
         this.logger.debug(`<-`, packet.getId());
-
         const payload = zlib.unzipSync(packet.getStream().buffer.slice(1));
         const pStream = new BinaryStream(payload);
 

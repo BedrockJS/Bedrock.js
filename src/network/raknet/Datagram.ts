@@ -39,7 +39,7 @@ export default class Datagram extends Packet {
 
   public headerFlags: number = 0
 
-  constructor(packets: EncapsulatedPacket[] = [], id: number = Protocol.DATA_PACKET_4) {
+  constructor(packets: EncapsulatedPacket[] = [], id: number = Protocol.STRUCTURE_TEMPLATE_DATA_REQUEST) {
     super(id)
 
     this.packets = packets

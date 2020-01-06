@@ -48,7 +48,8 @@ export default class Server extends EventEmitter {
 
             this.startListeners()
             if (bind) this.socket.bind(this.port, this.ip, () => {
-                /* */ });
+                /* */ 
+            });
         }
     }
 

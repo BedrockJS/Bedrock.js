@@ -11,7 +11,7 @@ export default class UnconnectedPong extends Packet {
 
   constructor(pingId: number, name: string, maxPlayers: number, secondaryName = 'Bedrock.js') {
     super(Protocol.UNCONNECTED_PONG)
-    this.version = Protocol.MINECRAFT_VERSION;
+    this.version = '1.14.0';
     this.pingId = pingId;
     this.name = name;
     this.maxPlayers = maxPlayers;

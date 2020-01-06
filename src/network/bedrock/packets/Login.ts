@@ -35,7 +35,7 @@ export default class Login extends GamePacket {
 
     this.chainData.chain.forEach(token => {
       const payload = decodeJWT(token)
-
+      console.log(payload);
       if(payload.extraData) {
         if(payload.extraData.displayName) {
           this.username = payload.extraData.displayName
