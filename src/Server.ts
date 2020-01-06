@@ -1,8 +1,8 @@
 import dgram from 'dgram';
 import { EventEmitter } from 'events';
 import Client from '@/Client';
-import { ServerOptions } from '@/interfaces';
-import Address from '@/interfaces/Address';
+import ServerOptions from '@/interfaces/ServerOptions';
+import Address from '@/interfaces/Interfaces';
 import RakNet from '@/network/RakNet';
 import ACK from '@/network/raknet/ACK';
 import Datagram from '@/network/raknet/Datagram';

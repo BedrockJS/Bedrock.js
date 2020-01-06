@@ -1,5 +1,4 @@
-import { Gamerule, GameruleType } from '@/interfaces';
-import Address, { AddressFamily } from '@/interfaces/Address';
+import Address, {AddressFamily, Gamerule, GameruleType} from '@/interfaces/Interfaces'
 import { Magic } from '@/network/raknet/Protocol';
 import { Round } from '@/utils';
 import Logger from '@/utils/Logger';

@@ -1,5 +1,5 @@
 import zlib from 'zlib';
-import Address from '@/interfaces/Address';
+import Address from '@/interfaces/Interfaces';
 import Bedrock from '@/network/bedrock/Protocol';
 import Packet from '@/network/Packet';
 import ACK from '@/network/raknet/ACK';

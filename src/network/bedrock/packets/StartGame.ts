@@ -1,4 +1,4 @@
-import { Difficulty, Dimension, Edition, Gamemode, Gamerule, Generator, PermissionLevel } from '@/interfaces'
+import { Difficulty, Dimension, Edition, Gamemode, Gamerule, Generator, PermissionLevel } from '@/interfaces/Interfaces'
 import { Vector3 } from 'math3d'
 import GamePacket from './GamePacket'
 import Protocol from '../Protocol'

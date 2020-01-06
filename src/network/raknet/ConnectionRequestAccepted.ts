@@ -1,4 +1,4 @@
-import Address, { AddressFamily } from '@/interfaces/Address'
+import Address, { AddressFamily } from '@/interfaces/Interfaces'
 import Protocol from '@/network/raknet/Protocol'
 import EncapsulatedPacket from './EncapsulatedPacket'
 

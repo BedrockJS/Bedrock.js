@@ -2,3 +2,6 @@ node_modules/
 coverage/
 package-lock.json
 .vscode/*
+*.xml
+*.iml
+.gitignore

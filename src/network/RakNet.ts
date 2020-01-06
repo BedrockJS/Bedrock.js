@@ -1,5 +1,5 @@
 import Client from '@/Client'
-import Address from '@/interfaces/Address'
+import Address from '@/interfaces/Interfaces'
 import IncompatibleProtocol from '@/network/raknet/IncompatibleProtocol'
 import OpenConnectionReplyOne from '@/network/raknet/OpenConnectionReplyOne'
 import OpenConnectionReplyTwo from '@/network/raknet/OpenConnectionReplyTwo'
