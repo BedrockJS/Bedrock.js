@@ -7,4 +7,4 @@ const BitFlag = {
   NeedsBAndS: 0x04,
 }
 
-export default BitFlag
+export default BitFlag;

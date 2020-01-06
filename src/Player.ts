@@ -22,7 +22,7 @@ export default class Player extends Entity {
     }
 
     public getAddress() {
-        return this.client.address
+        return this.client.address;
     }
 
     public getName(): string | null {
