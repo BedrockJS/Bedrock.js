@@ -1,24 +1,20 @@
-import PluginBase from "@/plugins/Plugin";
+import PluginBase from '@/plugins/PluginBase';
 import Player from "@/Player";
-import MoveEvent from "@/events/Events";
+import { Logger } from '@/utils';
 
 class MyPlugin extends PluginBase {
     onEnable(): any {
-        this.events.on('Build', (event: MoveEvent) => {
-            event.getPlayer();
-            event.getFrom();
-            event.getTo();
-            event.isCancelled();
-            this.getLogger().log(event.getPlayer().getName() + ' has moved positions.');
-        });
+        return this.main();
     }
 
-    onDisable(): any {
+    main() {
+        const Logger: Logger = this.getLogger();
 
-    }
-
-    onReload(): any {
-        
+        this.server.on('PlayerMoveEvent', (event: any) => {
+            const player: Player = event.getPlayer();
+            Logger.info(player.getAddress() + ' has moved');
+        })
+        return;
     }
 }
 

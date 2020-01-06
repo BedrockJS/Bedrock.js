@@ -3,7 +3,7 @@ import * as path from 'path';
 import { Plugin } from './Plugin';
 import Server from '../Server';
 
-export default class PluginManager {
+class PluginManager {
     private enabled: Map<String, Plugin> = new Map();
     private disabled: Map<String, Plugin> = new Map();
     private server: Server;
@@ -48,3 +48,5 @@ export default class PluginManager {
         });
     }
 }
+
+export default PluginManager;

@@ -1,9 +1,7 @@
 const PluginBase = require('bedrockjs').PluginBase;
 class MyPlugin extends PluginBase {
     onEnable() {
-        this.events.on('Build', (event) => {
-            this.getLogger().log(event.getPlayer().getName() + ' has moved positions.');
-        });
+        this.main();
     }
 
     onDisable() {
@@ -12,6 +10,13 @@ class MyPlugin extends PluginBase {
 
     onReload() {
         this.getLogger().log('Plugin is now reloaded');
+    }
+
+    main() {
+        const logger = this.getLogger();
+        this.server.on('PlayerMoveEvent', (event) => {
+            logger.info(event.getPlayer().getName() + ' has moved positions.');
+        });
     }
 }
 

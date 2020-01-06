@@ -1,10 +1,11 @@
 import PluginManager from "./PluginManager"
 import PluginSettings from "./PluginSettings"
 import Server from "../Server";
+import { Logger } from "@/utils";
 
 export interface Plugin {
 
-    constructor (server: Server, manager: PluginManager, dataDir: string, settings: PluginSettings): any;
+    //constructor (server: Server, manager: PluginManager, dataDir: string, settings: PluginSettings): any;
 
     /**
      * Called when plugin is first enabled
@@ -17,7 +18,17 @@ export interface Plugin {
     onReload(): any;
 
     /**
+     * Called when a plugin is disabled
+     */
+    onDisable(): any;
+
+    /**
      * @returns {String} - Plugin Name
      */
     getName(): string;
+
+    /**
+     * @returns {Logger} - Logger
+     */
+    getLogger(): Logger;
 }
