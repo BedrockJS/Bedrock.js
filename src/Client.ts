@@ -332,23 +332,34 @@ export default class Client {
         // k
     }
 
+    private handlePacketTest(err: Error|null, buffer: Buffer) {
+        if (!err) {
+            const pStream = new BinaryStream(buffer);
+
+            while (!pStream.feof()) {
+                const stream = new BinaryStream(pStream.readString());
+
+                switch (stream.buffer[0]) {
+                    case Bedrock.LOGIN:
+                        this.handleLogin(new Login(stream));
+                        break;
+                    default:
+                        this.logger.error('Game packet not yet implemented:', stream.buffer[0]);
+                        this.logger.error(stream.buffer);
+                }
+            }
+        } else {
+            // need this until i pass logger through callback
+            // this.logger.error(err);
+            console.error(err);
+            return;
+        }
+    }
+
     private handleGamePacket(packet: GamePacketWrapper) {
         this.logger.debug(`<-`, packet.getId());
-        const payload = zlib.unzipSync(packet.getStream().buffer.slice(1));
-        const pStream = new BinaryStream(payload);
-
-        while (!pStream.feof()) {
-            const stream = new BinaryStream(pStream.readString());
-
-            switch (stream.buffer[0]) {
-                case Bedrock.LOGIN:
-                    this.handleLogin(new Login(stream));
-                    break;
-                default:
-                    this.logger.error('Game packet not yet implemented:', stream.buffer[0]);
-                    this.logger.error(stream.buffer);
-            }
-        }
+        const handlePacket = this.handlePacketTest;
+        return zlib.unzip(packet.getStream().buffer.slice(1), handlePacket);
     }
 
     private handleLogin(packet: Login) {
