@@ -3,7 +3,7 @@ import { Plugin } from './Plugin';
 class PluginMap {
     private plugins: Map<String, Plugin> = new Map();
 
-    constructor () {
+    constructor() {
         this.plugins = new Map();
     }
 
@@ -16,7 +16,7 @@ class PluginMap {
         }
     }
 
-    getPlugins() : Array<any> {
+    getPlugins(): Array<any> {
         return Array.from(this.plugins.entries());
     }
 }

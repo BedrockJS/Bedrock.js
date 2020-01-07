@@ -8,12 +8,12 @@ class PluginManager {
     private disabled: Map<String, Plugin> = new Map();
     private server: Server;
 
-    constructor (server: Server) {
+    constructor(server: Server) {
         this.server = server;
         //this.server.loadPlugins(this);
     }
 
-    public loadPlugins (directory: string) : Map<String, Plugin> {
+    public loadPlugins(directory: string): Map<String, Plugin> {
         const plugins = this.getDirectories(directory);
         const self = this;
 

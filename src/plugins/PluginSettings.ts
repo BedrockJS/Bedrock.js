@@ -13,7 +13,7 @@ export default class PluginSettings {
      * Initialize settings
      * @param settings - String of file plugin.yml
      */
-    constructor (loaded: string) {
+    constructor(loaded: string) {
         const settings: any = YAML.load(loaded);
         this.name = settings.name || 'GenericPlugin';
         this.entryPoint = settings.main || 'plugin.js';
