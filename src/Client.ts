@@ -52,7 +52,7 @@ export default class Client {
     public datagramQueue: Datagram[] = [];
     public packetQueue: Datagram = new Datagram();
 
-    public recoveryQueue: Map < number, Datagram > = new Map();
+    public recoveryQueue: Map<number, Datagram> = new Map();
 
     public tickInterval: NodeJS.Timeout;
 
@@ -300,7 +300,7 @@ export default class Client {
                 this.disconnect('Client disconnected');
                 break;
             default:
-                this.logger.error('Packet not yet implemented:', packet.getId());
+                this.logger.error('Raknet packet not yet implemented:', packet.getId());
                 this.logger.error(packet.getStream().buffer);
         }
     }
@@ -332,7 +332,7 @@ export default class Client {
         // k
     }
 
-    private handlePacketTest(err: Error|null, buffer: Buffer) {
+    private handlePacketTest(err: Error | null, buffer: Buffer) {
         if (!err) {
             const pStream = new BinaryStream(buffer);
 
