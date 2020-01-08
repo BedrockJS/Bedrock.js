@@ -2,12 +2,12 @@ import * as fs from 'fs';
 import YAML from 'yamljs';
 
 export default class PluginSettings {
-    private name: string;
-    private entryPoint: string | null;
-    private authors: string;
-    private api: Number | Array<Number>;
-    private version: string | '1.0.0';
-    private private: boolean;
+    public name: string;
+    public entryPoint: string | null;
+    public authors: string;
+    public api: Number | Array<Number>;
+    public version: string | '1.0.0';
+    public private: boolean;
 
     /**
      * Initialize settings
@@ -23,23 +23,7 @@ export default class PluginSettings {
         this.private = settings.private || false;
     }
 
-    getName(): string {
-        return this.name;
-    }
-
-    getAuthors(): string {
-        return this.authors;
-    }
-
     getEntryPoint(): string {
         return '/src/' + this.entryPoint;
-    }
-
-    getAPI(): Number | Array<Number> {
-        return this.api;
-    }
-
-    isPrivate(): boolean {
-        return this.private;
     }
 }

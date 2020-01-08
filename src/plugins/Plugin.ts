@@ -21,14 +21,4 @@ export interface Plugin {
      * Called when a plugin is disabled
      */
     onDisable(): any;
-
-    /**
-     * @returns {String} - Plugin Name
-     */
-    getName(): string;
-
-    /**
-     * @returns {Logger} - Logger
-     */
-    getLogger(): Logger;
 }
