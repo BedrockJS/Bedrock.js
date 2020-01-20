@@ -6,15 +6,17 @@ import { Logger } from "@/utils";
 
 class PluginBase implements Plugin {
     public server: Server;
-    private manager: PluginManager;
-    private dataDir: string;
-    private settings: PluginSettings;
+    public dataDir: string;
+    public plugins: PluginManager;
+    public settings: PluginSettings;
+    public logger: Logger;
 
     constructor(server: Server, manager: PluginManager, dataDir: string, settings: PluginSettings) {
         this.server = server;
-        this.manager = manager;
+        this.plugins = manager;
         this.dataDir = dataDir;
         this.settings = settings;
+        this.logger = new Logger(settings.name);
     }
 
     onEnable(): any {
@@ -27,14 +29,6 @@ class PluginBase implements Plugin {
 
     onReload(): any {
         return;
-    }
-
-    getName(): string {
-        return this.settings.getName();
-    }
-
-    getLogger(): Logger {
-        return this.server.getLogger();
     }
 
 }

@@ -12,6 +12,7 @@
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true,
   }
 }

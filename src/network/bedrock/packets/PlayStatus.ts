@@ -4,7 +4,7 @@ import Protocol from '../Protocol'
 export enum PlayStatusIndicator {
   Okay = 0,
   OutdatedClient = 1,
-  OutdateServer = 2,
+  OutdatedServer = 2,
   Spawned = 3,
   InvalidTenant = 4,
   EditionMismatchEdu = 5,

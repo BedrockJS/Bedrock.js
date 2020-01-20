@@ -4,13 +4,12 @@ import { Plugin } from './Plugin';
 import Server from '../Server';
 
 class PluginManager {
-    private enabled: Map<String, Plugin> = new Map();
-    private disabled: Map<String, Plugin> = new Map();
+    public enabled: Map<String, Plugin> = new Map();
+    public disabled: Map<String, Plugin> = new Map();
     private server: Server;
 
     constructor(server: Server) {
         this.server = server;
-        //this.server.loadPlugins(this);
     }
 
     public loadPlugins(directory: string): Map<String, Plugin> {
@@ -32,9 +31,6 @@ class PluginManager {
 
     }
 
-    public getPlugin(plugin: string) {
-
-    }
 
     private getDirectories(path: string): Array<String> {
         return fs.readdirSync(path).filter(function (file) {
