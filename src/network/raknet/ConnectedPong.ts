@@ -18,6 +18,7 @@ export default class ConnectedPong extends EncapsulatedPacket {
     this.getStream()
       .writeLong(this.sendPingTime)
       .writeLong(this.sendPongTime)
+      .writeMagic()
   }
 
 }

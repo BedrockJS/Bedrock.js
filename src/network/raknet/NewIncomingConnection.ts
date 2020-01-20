@@ -1,4 +1,4 @@
-import Address from '@/interfaces/Address'
+import Address from '@/interfaces/Interfaces'
 import { BinaryStream } from '@/utils'
 import EncapsulatedPacket from './EncapsulatedPacket'
 import Protocol from './Protocol'
