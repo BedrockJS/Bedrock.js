@@ -1,6 +1,7 @@
 # Bedrock.js 
 (aiming to be) A blazingly fast multiplayer server for Minecraft Bedrock written in JavaScript / TypeScript <br /><br />
-**Important Note:** This repository is a managed clone from [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js), we do not take credit for any of the original works from the original repository. All credit for the original works go to their rightful owners.
+
+**Important Note:** This repository is a managed clone from [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js).
 
 ## Credits
 Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
@@ -12,17 +13,5 @@ Without the following repositories as a constant reference, this project would n
 -   falkirks ([falkirks/DirtServer](https://github.com/falkirks/DirtServer))
 
 ## Links
--   [Discord](https://discord.gg/Ex6vKkJ)
-
-## _"But JavaScript is so slow"_
-
-It seems to be a popular opinion that JavaScript isn't performant enough to be used as a game server. This project was created in an attempt to disprove that. You see, it's incredibly easy to point fingers at a language and laugh but, when you give it a little more thought, you realise that JavaScript, specifically Node.js, has great potential.
-
-A lot of these opinions are immediately backed up by _"...because JavaScript isn't compiled"_, which, in the case of running a Node.js server, is simply incorrect. When you start the server, [Google's V8](https://v8.dev) not only compiles the entire codebase, it also uses it's dictionary of fast, pre-compiled code fragments to optimise your code - [Read More](https://hashnode.com/post/is-nodejs-compiled-or-interpreted-language-cijylh0ed00keco5318e1em8p/answer/cijyq66au00kvvm53iky4den4).
-
-If you'd like to compare Node.js to Java, take a look at [this article](https://www.infoworld.com/article/2883328/node-js/java-vs-nodejs-an-epic-battle-for-developer-mindshare.html), it does a great job at explaining the pros of each. But, if you can't bring yourself to read the article, here's a small snippet for you:
-> Where Node.js wins: Speed\
-> People love to praise the speed of Node.js. The data comes in and the answers come out like lightning. Node.js doesn’t mess around with setting up separate threads with all of the locking headaches. There’s no overhead to slow down anything. You write simple code and Node.js takes the right step as quickly as possible.
-
-Another major perk to using Node.js is the ability to create [Node Addons](https://nodejs.org/api/addons.html). These will allow us to write certain parts of the software (such as the RakNet implementation) in C++, which is obviously a far more performant language.
+-   [Discord](https://discord.gg/eFHw4ux)
 
