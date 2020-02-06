@@ -3,8 +3,8 @@
 
 **Important Note:** This repository is a managed clone from [https://github.com/BradW/Bedrock.js](https://github.com/BradW/Bedrock.js).
 
-# DEVELOPERS
-Hello, while we welcome pull requests, we ask that you follow the [Contributing Guidelines](https://github.com/BedrockJS/Bedrock.js/CONTRIBUTING.md)
+## Developers
+Hello, while we welcome pull requests, we ask that you follow the [Contributing Guidelines](https://github.com/BedrockJS/Bedrock.js/blob/master/CONTRIBUTING.md)
 
 ## Credits
 Without the following repositories as a constant reference, this project would not be possible. Thank you to each and every person who has contributed to any of them, you're all amazing :heart:.
