@@ -16,3 +16,29 @@ After following these steps correctly, your pull request will be reviewed and, i
 ## Packages
 All external packages for this project are loaded from [NPM](https://npmjs.com). While it is not a requirement, we strongly recommend using `yarn` to install packages rather than the default `npm`.
 The reason for this is simple; `yarn` is not only quite a lot faster than `npm` most of the time (thanks to lot's of caching), but it is just generally nicer to use.
+
+## Rules for Code contributions
+1. Your pull request must follow api design of Bedrock.js (or be similar to it), any design copy or "port" of another software to Bedrock.js will not be accepted.
+2. The code must be yours, if it isn't, you **must** include the original source.
+3. The code you're contributing must follow the following [format](#syntax):
+ - 4 line **tab** spacing.
+ - Single qoute enclosed strings.
+ - Reasonable naming conventions.
+ - CamelCase variable conventions.
+
+### Syntax
+Below is an example on how to properly format your PR if it is a code contribution
+```ts
+
+class MyClass {
+    private plugins: Array<Plugin>;
+    private logger: Logger;
+
+    constructor () {
+        this.logger = new Logger('MyClass');
+        this.logger.info('Plugins coming soon!');
+    }
+}
+
+export default MyClass;
+```
