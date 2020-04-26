@@ -1,3 +1,4 @@
+/*
 import PluginBase from '@/plugins/PluginBase';
 import Player from "@/Player";
 import { Logger } from '@/utils';
@@ -19,3 +20,4 @@ class MyPlugin extends PluginBase {
 }
 
 export default MyPlugin;
+*/

@@ -1,13 +1,16 @@
 {
   "name": "bedrockjs",
   "version": "1.0.0",
-  "main": "app.ts",
+  "main": "lib/app.js",
+  "typings": "./typings/index.d.ts",
   "license": "GPL-3.0",
+  "author": "Bedrock.js",
   "scripts": {
     "start": "node ./node_modules/ts-node/dist/bin.js -r tsconfig-paths/register app.ts",
     "start:mon": "node ./node_modules/nodemon/bin/nodemon.js --watch 'src/**/*.ts' --exec node ./node_modules/ts-node/dist/bin.js -r tsconfig-paths/register app.ts",
     "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
-    "tslint": "tslint --project tsconfig.json"
+    "tslint": "tslint --project tsconfig.json",
+    "prepublish:run": "tsc && "
   },
   "dependencies": {
     "@types/uuid": "^3.4.5",
